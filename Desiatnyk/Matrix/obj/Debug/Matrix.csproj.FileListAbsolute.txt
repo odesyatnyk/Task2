@@ -1,0 +1,5 @@
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Matrix\bin\Debug\Matrix.dll
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Matrix\bin\Debug\Matrix.pdb
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Matrix\obj\Debug\Matrix.csprojResolveAssemblyReference.cache
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Matrix\obj\Debug\Matrix.dll
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Matrix\obj\Debug\Matrix.pdb

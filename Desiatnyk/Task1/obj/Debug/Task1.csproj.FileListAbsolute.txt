@@ -1,0 +1,10 @@
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Task1\bin\Debug\Task1.exe.config
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Task1\bin\Debug\Task1.exe
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Task1\bin\Debug\Task1.pdb
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Task1\bin\Debug\Matrix.dll
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Task1\bin\Debug\Polynomial.dll
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Task1\bin\Debug\Matrix.pdb
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Task1\bin\Debug\Polynomial.pdb
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Task1\obj\Debug\Task1.csprojResolveAssemblyReference.cache
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Task1\obj\Debug\Task1.exe
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Task1\obj\Debug\Task1.pdb

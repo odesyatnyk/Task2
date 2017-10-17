@@ -1,0 +1,5 @@
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Polynomial\bin\Debug\Polynomial.dll
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Polynomial\bin\Debug\Polynomial.pdb
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Polynomial\obj\Debug\Polynomial.csprojResolveAssemblyReference.cache
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Polynomial\obj\Debug\Polynomial.dll
+D:\EPAM\RDNetPool10\Tasks\Task3\Desiatnyk\Polynomial\obj\Debug\Polynomial.pdb
