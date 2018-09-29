@@ -60,9 +60,30 @@ namespace MathHelper
         {
             var result = new StringBuilder();
             foreach (var item in Coefficients)
-                result.Append(string.Format((item.Value > 0 ? "+" + item.Value.ToString() : item.Value.ToString()) + "x^" + item.Key.ToString()));
+            {
+                if (item.Value > 0 && item.Key != Coefficients.First().Key)
+                    result.Append(" + ");
+                else if(item.Value < 0)
+                    result.Append(" - ");
 
-            return result.ToString();
+                if (item.Key == Coefficients.First().Key && item.Key > 1)
+                    result.Append($"{Math.Abs(item.Value)}x^{item.Key}");
+                else if(item.Key == Coefficients.First().Key && item.Key == 1)
+                    result.Append($"{Math.Abs(item.Value)}x");
+                else if (item.Key == Coefficients.First().Key && item.Key == 0)
+                    result.Append($"{Math.Abs(item.Value)}");
+                else
+                {
+                    if (item.Key == 1)
+                        result.Append($"{Math.Abs(item.Value)}x");
+                    else if (item.Key == 0)
+                        result.Append($"{Math.Abs(item.Value)}");
+                    else
+                        result.Append($"{Math.Abs(item.Value)}x^{item.Key}");
+                }
+            }
+
+            return result.ToString().Trim();
         }
 
         public object Clone()

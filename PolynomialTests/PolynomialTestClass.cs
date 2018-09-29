@@ -263,7 +263,74 @@ namespace Test.MathHelper.PolynomialTests
 
             Assert.IsNotNull(stringRepresentation);
             Assert.IsNotEmpty(stringRepresentation);
-            Assert.AreEqual("+10x^4+5x^3+1x^1+5x^0", stringRepresentation);
+            Assert.AreEqual("10x^4 + 5x^3 + 1x + 5", stringRepresentation);
+        }
+
+        [Test]
+        public void PolynomialToString_ToString_ValidString1()
+        {
+
+            var coefficients = new Dictionary<int, int>()
+            {
+                { 0, 5 }
+            };
+            var pol = new Polynomial(coefficients);
+            var stringRepresentation = pol.ToString();
+
+            Assert.IsNotNull(stringRepresentation);
+            Assert.IsNotEmpty(stringRepresentation);
+            Assert.AreEqual("5", stringRepresentation);
+        }
+
+        [Test]
+        public void PolynomialToString_ToString_ValidString2()
+        {
+
+            var coefficients = new Dictionary<int, int>()
+            {
+                { 1, 5 }
+            };
+            var pol = new Polynomial(coefficients);
+            var stringRepresentation = pol.ToString();
+
+            Assert.IsNotNull(stringRepresentation);
+            Assert.IsNotEmpty(stringRepresentation);
+            Assert.AreEqual("5x", stringRepresentation);
+        }
+
+        [Test]
+        public void PolynomialToString_ToString_ValidString3()
+        {
+
+            var coefficients = new Dictionary<int, int>()
+            {
+                { 1, 5 },
+                { 0, 5 }
+            };
+            var pol = new Polynomial(coefficients);
+            var stringRepresentation = pol.ToString();
+
+            Assert.IsNotNull(stringRepresentation);
+            Assert.IsNotEmpty(stringRepresentation);
+            Assert.AreEqual("5x + 5", stringRepresentation);
+        }
+
+        [Test]
+        public void PolynomialToString_ToString_ValidString4()
+        {
+
+            var coefficients = new Dictionary<int, int>()
+            {
+                { 10, -5 },
+                { 1, 5 },
+                { 0, 5 }
+            };
+            var pol = new Polynomial(coefficients);
+            var stringRepresentation = pol.ToString();
+
+            Assert.IsNotNull(stringRepresentation);
+            Assert.IsNotEmpty(stringRepresentation);
+            Assert.AreEqual("- 5x^10 + 5x + 5", stringRepresentation);
         }
     }
 }
