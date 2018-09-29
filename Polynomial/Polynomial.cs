@@ -3,7 +3,7 @@ using System.Text;
 using System.Linq;
 using System.Collections.Generic;
 
-namespace PolynomialNamespace
+namespace MathHelper
 {
     public class Polynomial : ICloneable
     {

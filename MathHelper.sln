@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix", "Matrix\Matrix.csproj", "{6FC5C195-3985-4BD9-A134-9264F4C0C22A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathHelper.Matrix", "Matrix\MathHelper.Matrix.csproj", "{6FC5C195-3985-4BD9-A134-9264F4C0C22A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polynomial", "Polynomial\Polynomial.csproj", "{2881DDA2-36F9-4EDF-A0D2-8D8D11A17F00}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathHelper.Polynomial", "Polynomial\MathHelper.Polynomial.csproj", "{2881DDA2-36F9-4EDF-A0D2-8D8D11A17F00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatrixTests", "MatrixTests\MatrixTests.csproj", "{A62F5203-5410-4C90-8C79-66BB9A7F2F43}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.MathHelper.MatrixTests", "MatrixTests\Test.MathHelper.MatrixTests.csproj", "{A62F5203-5410-4C90-8C79-66BB9A7F2F43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolynomialTests", "PolynomialTests\PolynomialTests.csproj", "{3863B245-75B4-4255-AF7D-F542B0F3C972}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.MathHelper.PolynomialTests", "PolynomialTests\Test.MathHelper.PolynomialTests.csproj", "{3863B245-75B4-4255-AF7D-F542B0F3C972}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F0E3DAEF-AF8E-4297-B127-BDF7F3BF4B8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.MathHelper.TestHelpers", "TestHelpers\Test.MathHelper.TestHelpers.csproj", "{37CBB079-A310-470B-8907-FA28E600D893}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +37,18 @@ Global
 		{3863B245-75B4-4255-AF7D-F542B0F3C972}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3863B245-75B4-4255-AF7D-F542B0F3C972}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3863B245-75B4-4255-AF7D-F542B0F3C972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37CBB079-A310-470B-8907-FA28E600D893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37CBB079-A310-470B-8907-FA28E600D893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37CBB079-A310-470B-8907-FA28E600D893}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37CBB079-A310-470B-8907-FA28E600D893}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A62F5203-5410-4C90-8C79-66BB9A7F2F43} = {F0E3DAEF-AF8E-4297-B127-BDF7F3BF4B8B}
+		{3863B245-75B4-4255-AF7D-F542B0F3C972} = {F0E3DAEF-AF8E-4297-B127-BDF7F3BF4B8B}
+		{37CBB079-A310-470B-8907-FA28E600D893} = {F0E3DAEF-AF8E-4297-B127-BDF7F3BF4B8B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B043D314-2319-4299-A443-7AC627FEC707}

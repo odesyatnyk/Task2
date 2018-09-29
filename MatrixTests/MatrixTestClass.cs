@@ -1,60 +1,38 @@
 ﻿using NUnit.Framework;
-using MatrixNamespace;
-using CustomExceptions;
+using MathHelper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MatrixNamespace.Tests
+namespace Test.MathHelper.MatrixTests
 {
     [TestFixture]
-    public class MatrixTests
+    public class MatrixTestClass
     {
         [Test]
+        [ExpectedException(typeof(InitializeIndexOutOfRangeException))]
         public void Matrix_WhenInitializingRowsLengthLowerThanZero_ShouldThrowInitializeIndexOutOfRangeException()
         {
             Matrix testMatrix = new Matrix();
-            try
-            {
-                testMatrix = new Matrix(-1, 4);
-            }
-            catch (InitializeIndexOutOfRangeException ex)
-            {
-                StringAssert.Contains(ex.Message, "Number of rows and columns must be positive");
-                return;
-            }
+            testMatrix = new Matrix(-1, 4);
         }
 
         [Test]
+        [ExpectedException(typeof(InitializeIndexOutOfRangeException))]
         public void Matrix_WhenInitializingColumnsLengthLowerThanZero_ShouldThrowInitializeIndexOutOfRangeException()
         {
             Matrix testMatrix = new Matrix();
-            try
-            {
-                testMatrix = new Matrix(4, -4);
-            }
-            catch (InitializeIndexOutOfRangeException ex)
-            {
-                StringAssert.Contains(ex.Message, "Number of rows and columns must be positive");
-                return;
-            }
+            testMatrix = new Matrix(4, -4);
         }
 
         [Test]
+        [ExpectedException(typeof(IndexOutOfRangeException))]
         public void Indexer_WhenIndexLowerThanZero_ShouldThrowIndexOutOfRangeException()
         {
             Matrix testMatrix = new Matrix(4, 4);
-            try
-            {
-                int valueFromMatrix = testMatrix[0, -1];
-            }
-            catch (IndexOutOfRangeException ex)
-            {
-                StringAssert.Contains(ex.Message, "Inaccessible index of matrix");
-                return;
-            }
+            int valueFromMatrix = testMatrix[0, -1];
         }
 
         [Test]

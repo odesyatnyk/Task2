@@ -1,13 +1,12 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using CustomExceptions;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MatrixNamespace
+namespace MathHelper
 {
     [Serializable]
     public class Matrix : ICloneable

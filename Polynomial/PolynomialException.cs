@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PolynomialNamespace
+namespace MathHelper
 {
         [Serializable]
         public class NullPolynomialInitializationListException : Exception

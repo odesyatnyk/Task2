@@ -1,16 +1,20 @@
 ﻿using NUnit.Framework;
-using PolynomialNamespace;
+using MathHelper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PolynomialNamespace.Tests
+namespace Test.MathHelper.PolynomialTests
 {
     [TestFixture]
-    public class PolynomialTests
+    public class PolynomialTestClass
     {
-        
+        [Test]
+        public void MyTestMethod()
+        {
+
+        }
     }
 }
