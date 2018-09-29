@@ -65,10 +65,6 @@
       <Project>{6FC5C195-3985-4BD9-A134-9264F4C0C22A}</Project>
       <Name>MathHelper.Matrix</Name>
     </ProjectReference>
-    <ProjectReference Include="..\TestHelpers\Test.MathHelper.TestHelpers.csproj">
-      <Project>{37cbb079-a310-470b-8907-fa28e600d893}</Project>
-      <Name>Test.MathHelper.TestHelpers</Name>
-    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

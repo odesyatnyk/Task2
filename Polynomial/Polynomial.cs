@@ -10,12 +10,6 @@ namespace MathHelper
         public int Degree { get; private set; }
         public Dictionary<int, int> Coefficients { get; private set; }
 
-        public Polynomial()
-        {
-            Degree = 0;
-            Coefficients = new Dictionary<int, int>();
-        }
-
         public Polynomial(List<int> coefficientList)
         {
             if (coefficientList == null)
@@ -23,11 +17,14 @@ namespace MathHelper
 
             Degree = coefficientList.All(x => x == 0) ? 0 : coefficientList.Count - coefficientList.IndexOf(coefficientList.First(x => x != 0)) - 1;
 
-            for (int i = 0; i < coefficientList.Count; i++)
-                if (coefficientList[i] != 0)
-                    Coefficients.Add(coefficientList.Count - i - 1, coefficientList[i]);
-
-
+            Coefficients = coefficientList.Select(x => new
+            {
+                coef = x,
+                degree = coefficientList.Count - coefficientList.IndexOf(x) - 1
+            })
+            .Where(x => x.coef != 0)
+            .OrderByDescending(x => x.degree)
+            .ToDictionary(x => x.degree, y => y.coef);
         }
 
         public Polynomial(Dictionary<int, int> coefficients)

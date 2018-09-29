@@ -12,27 +12,33 @@ namespace Test.MathHelper.MatrixTests
     public class MatrixTestClass
     {
         [Test]
-        [ExpectedException(typeof(InitializeIndexOutOfRangeException))]
         public void Matrix_WhenInitializingRowsLengthLowerThanZero_ShouldThrowInitializeIndexOutOfRangeException()
         {
-            Matrix testMatrix = new Matrix();
-            testMatrix = new Matrix(-1, 4);
+            Assert.Catch<InitializeIndexOutOfRangeException>(() =>
+            {
+                Matrix testMatrix = new Matrix();
+                testMatrix = new Matrix(-1, 4);
+            });
         }
 
         [Test]
-        [ExpectedException(typeof(InitializeIndexOutOfRangeException))]
         public void Matrix_WhenInitializingColumnsLengthLowerThanZero_ShouldThrowInitializeIndexOutOfRangeException()
         {
-            Matrix testMatrix = new Matrix();
-            testMatrix = new Matrix(4, -4);
+            Assert.Catch<InitializeIndexOutOfRangeException>(() =>
+            {
+                Matrix testMatrix = new Matrix();
+                testMatrix = new Matrix(4, -4);
+            });
         }
 
         [Test]
-        [ExpectedException(typeof(IndexOutOfRangeException))]
         public void Indexer_WhenIndexLowerThanZero_ShouldThrowIndexOutOfRangeException()
         {
-            Matrix testMatrix = new Matrix(4, 4);
-            int valueFromMatrix = testMatrix[0, -1];
+            Assert.Catch<IndexOutOfRangeException>(() =>
+            {
+                Matrix testMatrix = new Matrix(4, 4);
+                int valueFromMatrix = testMatrix[0, -1];
+            });
         }
 
         [Test]
